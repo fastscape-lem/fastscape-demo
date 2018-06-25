@@ -1,0 +1,19 @@
+name: fastscape-demo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - numpy
+  - pandas
+  - xarray
+  - xarray-simlab=0.2.0
+  - xarray-topo=0.0.11
+  - jupyter
+  - notebook
+  - ipykernel
+  - matplotlib
+  - bokeh
+  - holoviews
+  - graphviz
+  - python-graphviz
