@@ -10,7 +10,7 @@ xarray-simlab modelling framework.
 
 You can try running the notebooks from your browser without installing
 anything thanks to [binder](https://mybinder.org/). Just click on the
-binder badge above to launch a new notebook server.
+"launch binder" badge above to launch a new notebook server.
 
 Alternatively, you can run the notebook server on your own
 machine. Assuming that you have `git` and
