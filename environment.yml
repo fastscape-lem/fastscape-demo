@@ -7,7 +7,7 @@ dependencies:
   - numpy
   - pandas
   - xarray
-  - xarray-simlab=0.2.0
+  - xarray-simlab=0.2.1
   - xarray-topo=0.0.11
   - jupyter
   - notebook
