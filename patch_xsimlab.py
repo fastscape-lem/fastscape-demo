@@ -11,7 +11,7 @@ def _run_model_batch(self, dim, model=None, client=None):
     model = _maybe_get_model_from_context(model)
 
     out_ds_list = []
-    
+
     for _, in_ds in self._ds.groupby(dim):
         out_ds = delayed(in_ds.xsimlab.run)(model=model)
         out_ds_list.append(out_ds)
