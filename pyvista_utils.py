@@ -1,5 +1,12 @@
+import os
+
 import numpy as np
 import pyvista as pv
+
+
+# enable panel display on headless servers
+os.system('/usr/bin/Xvfb :99 -screen 0 1024x768x24 &')
+os.environ['DISPLAY'] = ':99'
 
 
 def create_pyvista_grid(dataset, warp_by_scalar=True, scale_factor=1.,
