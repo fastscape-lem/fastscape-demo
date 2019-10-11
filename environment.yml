@@ -21,5 +21,6 @@ dependencies:
   - ipywidgets
   - hvplot
   - datashader
+  - pip
   - pip:
       - git+https://github.com/fastscape-lem/fastscape
