@@ -3,7 +3,7 @@
 # FastScape Demo
 
 Some [Jupyter](http://jupyter.org/) notebooks showing how to build,
-customize and run a landscape evolution model (FastScape) using the
+customize and run landscape evolution models using the
 [xarray-simlab](https://github.com/benbovy/xarray-simlab) modelling
 framework and the model components available in
 [fastscape](https://github.com/fastscape-lem/fastscape).
