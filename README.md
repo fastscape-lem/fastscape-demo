@@ -4,16 +4,17 @@
 
 Some [Jupyter](http://jupyter.org/) notebooks showing how to build,
 customize and run a landscape evolution model (FastScape) using the
-xarray-simlab modelling framework.
+[xarray-simlab](https://github.com/benbovy/xarray-simlab) modelling
+framework and the model components available in
+[fastscape](https://github.com/fastscape-lem/fastscape).
 
 ## How to run the notebooks?
 
 You can try running the notebooks from your browser without installing
 anything thanks to [binder](https://mybinder.org/). Just click on the
 "launch binder" badge above and it will launch remotely a new notebook
-server for you. Note that this is still somewhat experimental. This
-service is for demo purpose only, do not rely on it for doing more
-serious work.
+server for you. This service is for demo purpose only, do not rely on
+it for doing more serious work.
 
 Alternatively, you can run the notebook server on your own
 machine. Assuming that you have `git` and
