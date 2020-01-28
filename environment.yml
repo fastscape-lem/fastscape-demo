@@ -6,7 +6,7 @@ dependencies:
   - python=3.7
   - numpy
   - pandas
-  - xarray
+  - xarray=0.14.0
   - xarray-simlab=0.3.0
   - fastscapelib-f2py=2.8.1
   - jupyter
