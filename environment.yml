@@ -6,8 +6,9 @@ dependencies:
   - python=3.7
   - numpy
   - pandas
-  - xarray=0.14.0
-  - xarray-simlab=0.3.0
+  - dask
+  - xarray
+  - xarray-simlab=0.4.1
   - fastscapelib-f2py=2.8.1
   - jupyter
   - notebook
@@ -17,10 +18,11 @@ dependencies:
   - python-graphviz
   - numba
   - pyvista
-  - itkwidgets
   - ipywidgets
   - hvplot
   - datashader
+  - zarr
+  - tqdm
   - pip
   - pip:
       - git+https://github.com/fastscape-lem/fastscape
