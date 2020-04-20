@@ -11,6 +11,7 @@ dependencies:
   - xarray-simlab=0.4.1
   - fastscapelib-f2py=2.8.1
   - jupyter
+  - jupyterlab
   - notebook
   - ipykernel
   - matplotlib
@@ -23,6 +24,9 @@ dependencies:
   - datashader
   - zarr
   - tqdm
+  - nodejs
   - pip
   - pip:
+      # TODO: use conda > v1.0.1 is released
+      - git+https://github.com/dask/dask-labextension
       - git+https://github.com/fastscape-lem/fastscape
