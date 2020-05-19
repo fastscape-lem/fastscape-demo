@@ -9,7 +9,7 @@ dependencies:
   - dask
   - xarray
   - xarray-simlab=0.4.1
-  - fastscapelib-f2py=2.8.1
+  - fastscapelib-f2py=2.8.2
   - jupyter
   - jupyterlab
   - notebook
