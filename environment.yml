@@ -7,6 +7,7 @@ dependencies:
   - numpy
   - pandas
   - dask
+  - dask-labextension
   - xarray
   - xarray-simlab=0.4.1
   - fastscapelib-f2py=2.8.2
@@ -18,8 +19,8 @@ dependencies:
   - graphviz
   - python-graphviz
   - numba
-  - pyvista
   - ipywidgets
+  - ipygany
   - hvplot
   - datashader
   - zarr
@@ -27,6 +28,5 @@ dependencies:
   - nodejs
   - pip
   - pip:
-      # TODO: use conda > v1.0.1 is released
-      - git+https://github.com/dask/dask-labextension
       - git+https://github.com/fastscape-lem/fastscape
+      - git+https://github.com/fastscape-lem/ipyfastscape
