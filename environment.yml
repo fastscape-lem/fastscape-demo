@@ -18,7 +18,6 @@ dependencies:
   - graphviz
   - python-graphviz
   - numba
-  - pyvista
   - ipywidgets
   - hvplot
   - datashader
