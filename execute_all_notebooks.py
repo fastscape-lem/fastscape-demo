@@ -2,6 +2,7 @@
 from pathlib import Path
 import shutil
 import sys
+import time
 import warnings
 
 import papermill as pm
@@ -21,7 +22,11 @@ if __name__ == "__main__":
         # execute notebook
         print(f"executing {pn}")
         sys.stdout.flush()
+        time.sleep(1)
+
         with warnings.catch_warnings():
             # ignore papermill warning due to no notebook file output.
             warnings.filterwarnings("ignore", category=UserWarning)
             pm.execute_notebook(pn, "/dev/null", kernel_name="python3", cwd=pn.parent)
+
+        time.sleep(1)
