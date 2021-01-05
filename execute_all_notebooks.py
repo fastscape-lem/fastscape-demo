@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import shutil
-import time
+import sys
 import warnings
 
 import papermill as pm
@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
         # execute notebook
         print(f"executing {pn}")
-        time.sleep(1)
+        sys.stdout.flush()
         with warnings.catch_warnings():
             # ignore papermill warning due to no notebook file output.
             warnings.filterwarnings("ignore", category=UserWarning)
