@@ -29,4 +29,5 @@ if __name__ == "__main__":
             warnings.filterwarnings("ignore", category=UserWarning)
             pm.execute_notebook(pn, "/dev/null", kernel_name="python3", cwd=pn.parent)
 
+        sys.stdout.flush()
         time.sleep(1)
