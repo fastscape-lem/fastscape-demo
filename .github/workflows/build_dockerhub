@@ -1,0 +1,20 @@
+name: Build/Upload image on DockerHub
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@main
+    - name: build and upload docker image
+      uses: jupyterhub/repo2docker-action@master
+      with:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        IMAGE_NAME: fastscape/${{ github.event.repository.name }}
+        PUBLIC_REGISTRY_CHECK: true
