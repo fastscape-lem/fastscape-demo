@@ -9,13 +9,14 @@ dependencies:
   - dask-labextension
   - xarray
   - xarray-simlab=0.4.1
+  - netcdf4
   - fastscapelib-f2py=2.8.2
   - ipyfastscape
   - jupyter
   - jupyterlab
   - notebook
   - ipykernel
-  - matplotlib
+  - matplotlib-base
   - graphviz
   - python-graphviz
   - numba
