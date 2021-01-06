@@ -24,7 +24,7 @@ You can run the notebooks in your browser without installing anything thanks to
 "launch binder" badge above and it will launch remotely a new notebook server
 for you:
 
-[Run on binder](https://mybinder.org/v2/gh/fastscape-lem/fastscape-demo/master?urlpath=lab)
+- [Run on binder](https://mybinder.org/v2/gh/fastscape-lem/fastscape-demo/master?urlpath=lab)
 
 This service is for demo purpose only, do not rely on it for doing more serious
 work.
@@ -32,20 +32,20 @@ work.
 ### Install and run locally (Docker)
 
 [Docker](https://www.docker.com/) images are built automatically for this
-repository. Those images provide the whole computing environment (pre-installed
-and pre-configured) needed to run the notebooks. The only requirement is to
-have Docker installed on your machine (it is available on all platforms
+repository. Those images provide the whole computing environment, pre-installed
+and pre-configured for running the notebooks. The only requirement is to
+have Docker installed on your machine. It is available on all platforms
 Linux/Windows/Mac and it can be installed from the Docker website or using one
-of your platform's package managers).
+of your platform's package managers.
 
-Run the command below first to pull the latest image:
+Run the command below to first pull the latest image:
 
 ```bash
 $ docker pull fastscape/fastscape-demo:latest
 ```
 
 Then run the command below to start the Jupyterlab application from the Docker
-container (replace `test-fastscape` if you want to give another name to your
+container (replace `test-fastscape` by any other name you want to give to your
 local container):
 
 ```bash
@@ -90,8 +90,8 @@ $ jupyter labextension install \
     ipygany
 ```
 
-You can finally run the command below to start the Jupyterlab application. It
-should open a new tab in your browser.
+Finally run the command below to start the Jupyterlab application. It should
+open a new tab in your browser.
 
 ```bash
 $ jupyter lab
@@ -110,10 +110,10 @@ $ conda env update -n fastscape-demo --file environment-dev.yml
 ```
 
 This installs a few additional packages like
-[pre-commit](https://pre-commit.com/), which is used in this repository to
-ensure that all notebook cell outputs are cleared before adding or updating
-notebooks in the git repository. Run the command below first to enable
-pre-commit for this repository:
+[pre-commit](https://pre-commit.com/), which is used to ensure that all notebook
+cell outputs are cleared before adding or updating notebooks in this git
+repository. Run the command below to enable pre-commit (you only need to do this
+once):
 
 ```bash
 $ pre-commit install
