@@ -52,12 +52,14 @@ local container):
 $ docker run -it --name test-fastscape -p 8888:8888 fastscape/fastscape-demo jupyter lab --ip 0.0.0.0
 ```
 
+You can then enter in your browser the url and token provided to start using the
+application.
+
 Check [Docker's documentation](https://docs.docker.com/) for additional run
 options, e.g., if you want to use the Jupyterlab application with notebooks or
 files on your local filesystem (i.e., not in the container).
 
-You can then enter the url and token provided in your browser to start using the
-application. When you are done you need to stop (and optionally remove) the container:
+When you are done you need to stop (and optionally remove) the container:
 
 ``` bash
 $ docker stop test-fastscape
