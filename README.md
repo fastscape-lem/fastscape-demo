@@ -88,3 +88,35 @@ should open a new tab in your browser.
 ```bash
 $ jupyter lab
 ```
+
+## How to contribute?
+
+Your contribution is welcome! Your can do so by reporting issues, suggesting new
+notebook examples or improvements to the current examples.
+
+A few extra steps are required to prepare your contributions. You can first
+update the conda environment using the following command:
+
+```bash
+$ conda env update -n fastscape-demo --file environment-dev.yml 
+```
+
+This installs a few additional packages like
+[pre-commit](https://pre-commit.com/), which is used in this repository to
+ensure that all notebook cell outputs are cleared before adding or updating
+notebooks in the git repository. Run the command below first to enable
+pre-commit for this repository:
+
+```bash
+$ pre-commit install
+```
+
+The script below is useful if you want to ensure that all notebooks are running
+without error:
+
+```bash
+$ python execute_all_notebooks.py
+```
+
+This script (as well as a script to build the Docker image) is run each time you
+open or update a pull-request on GitHub.
