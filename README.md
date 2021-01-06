@@ -9,6 +9,12 @@ evolution modeling and topographic analysis.
 
 More information on this website: https://fastscape.org
 
+- [How to run the notebooks?](#how-to-run-the-notebooks)
+    - [Run in the cloud (Binder)](#run-in-the-cloud-binder)
+    - [Install and run locally (Docker)](#install-and-run-locally-docker)
+    - [Install and run locally (Conda)](#install-and-run-locally-conda)
+- [How to contribute?](#how-to-contribute)
+
 ## How to run the notebooks?
 
 ### Run in the cloud (Binder)
