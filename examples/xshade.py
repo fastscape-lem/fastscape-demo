@@ -1,4 +1,4 @@
-import datashader.geo as dgeo
+import xrspatial
 
 
 def hillshade(ds, groupby=None, elev_var='topography__elevation', **kwargs):
@@ -7,10 +7,10 @@ def hillshade(ds, groupby=None, elev_var='topography__elevation', **kwargs):
     if groupby is not None:
         # TODO: use shortcut=True
         # https://github.com/holoviz/datashader/issues/871
-        hshade = elev.groupby(groupby).apply(dgeo.hillshade, shortcut=False,
+        hshade = elev.groupby(groupby).apply(xrspatial.hillshade, shortcut=False,
                                              **kwargs)
     else:
-        hshade = dgeo.hillshade(elev, **kwargs)
+        hshade = xrspatial.hillshade(elev, **kwargs)
     
     return hshade
 

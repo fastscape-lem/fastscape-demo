@@ -8,6 +8,7 @@ dependencies:
   - dask
   - dask-labextension
   - xarray
+  - xarray-spatial
   - xarray-simlab=0.4.1
   - netcdf4
   - fastscapelib-f2py=2.8.2
