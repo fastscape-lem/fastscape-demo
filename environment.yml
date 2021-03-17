@@ -8,7 +8,7 @@ dependencies:
   - dask
   - dask-labextension
   - xarray
-  - xarray-simlab=0.4.1
+  - xarray-simlab=0.5.0
   - netcdf4
   - fastscapelib-f2py=2.8.2
   - ipyfastscape
@@ -16,14 +16,15 @@ dependencies:
   - jupyterlab
   - notebook
   - ipykernel
+  - ipython=7.10
   - matplotlib-base
   - graphviz
   - python-graphviz
   - numba
   - ipywidgets
   - ipygany
-  - hvplot
-  - datashader
+  - hvplot=0.7.0
+  - datashader=0.11.1
   - zarr
   - tqdm
   - nodejs
