@@ -45,4 +45,4 @@ def map_xr_func(func, da, time_dim=None, batch_dim=None, **kwargs):
 def hillshade(ds, groupby=None, elev_var='topography__elevation', **kwargs):
     elev = ds[elev_var]
 
-    return map_xr_func(geo.hillshade, elev, time_dim=groupby)
+    return map_xr_func(geo.hillshade, elev, time_dim=groupby, **kwargs)
