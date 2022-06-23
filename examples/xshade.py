@@ -1,5 +1,5 @@
 import xarray as xr
-from datashader import geo
+from xrspatial.hillshade import hillshade as xrhillshade
 
 
 def map_xr_func(func, da, time_dim=None, batch_dim=None, **kwargs):
@@ -45,4 +45,4 @@ def map_xr_func(func, da, time_dim=None, batch_dim=None, **kwargs):
 def hillshade(ds, groupby=None, elev_var='topography__elevation', **kwargs):
     elev = ds[elev_var]
 
-    return map_xr_func(geo.hillshade, elev, time_dim=groupby, **kwargs)
+    return map_xr_func(xrhillshade, elev, time_dim=groupby, **kwargs)

@@ -79,18 +79,7 @@ $ conda env create -f environment.yml
 $ conda activate fastscape-demo
 ```
 
-You also need to install a few Jupyterlab extensions with the following command
-(this step won't be required anymore with Jupyterlab >= 3.x):
-
-```bash
-$ jupyter labextension install \
-    @jupyter-widgets/jupyterlab-manager \
-    @pyviz/jupyterlab_pyviz \
-    dask-labextension \
-    ipygany
-```
-
-Finally run the command below to start the Jupyterlab application. It should
+Then run the command below to start the Jupyterlab application. It should
 open a new tab in your browser.
 
 ```bash
