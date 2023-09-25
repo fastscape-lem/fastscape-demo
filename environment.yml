@@ -10,6 +10,7 @@ dependencies:
   - xarray
   - xarray-simlab=0.5.0
   - netcdf4
+  - fastscape
   - fastscapelib-f2py=2.8.2
   - ipyfastscape
   - jupyter
@@ -29,5 +30,3 @@ dependencies:
   - zarr
   - tqdm
   - pip
-  - pip:
-      - git+https://github.com/fastscape-lem/fastscape
