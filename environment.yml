@@ -12,7 +12,7 @@ dependencies:
   - netcdf4
   - fastscape
   - fastscapelib-f2py=2.8.2
-  - ipyfastscape
+  - ipyfastscape>=0.2.1
   - jupyter
   - jupyterlab>=3
   - notebook
